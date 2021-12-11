@@ -173,6 +173,14 @@ footer .section {
         flex-direction: column;
     }
 
+    .video {
+        width: 100%;
+    }
+
+    .slides {
+        width: 100%;
+    }
+    
     footer .section {
         width: 100%;
         align-items: center;
