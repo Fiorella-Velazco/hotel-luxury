@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fiorella Velazco Llanos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/index.css">
+        <link rel="stylesheet" href="./assets/slider.css">
+        <script src="jquery/jquery-3.6.0.js"></script> 
+        <script src="jquery/jquery.slides.js"></script>
+        <script>
+            $(function(){
+            $(".slides").slidesjs({
+                width: window.innerWidth,
+                height: 600,
+                play: {
+                    active: true,
+                        // [boolean] Generate the play and stop buttons.
+                        // You cannot use your own buttons. Sorry.
+                    effect: "slide",
+                        // [string] Can be either "slide" or "fade".
+                    interval: 4000,
+                        // [number] Time spent on each slide in milliseconds.
+                    auto: true,
+                        // [boolean] Start playing the slideshow on load.
+                    swap: true,
+                        // [boolean] show/hide stop and play buttons
+                    pauseOnHover: true,
+                        // [boolean] pause a playing slideshow on hover
+                    restartDelay: 2000
+                        // [number] restart delay on inactive slideshow
+                }
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="logo">
+                    <img src="./assets/imagenes/logo.png" alt="logo">
+                    <span>Hotel Luxury</span>
+                </div>
+                <div class="menu-box">
+                    <div class="menu">
+                        <a href="#" class="opcion">Inicio</a>
+                        <a href="#" class="opcion">Blog</a>
+                        <a href="#" class="opcion">Nosotros</a>
+                        <a href="#" class="opcion">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="slides">
+                <a href="#"><img src="assets/imagenes/slide1.jpeg"></a>
+                <a href="#"><img src="assets/imagenes/slide2.jpeg"></a>
+                <a href="#"><img src="assets/imagenes/slide3.jpeg"></a>
+            </section>
+            <section class="container">
+                <div class="main-box">
+                    <div class="row">
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sXqJHZRyJhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="descripcion">
+                            <h1 class="title">Nuestros hoteles</h1>
+                            <p>
+                                Somos una cadena hotelera peruana con más de 35 años de experiencia en el mercado. Estamos enfocados en proporcionar a nuestros huéspedes una experiencia de viaje única ofreciendo un servicio de calidad con ubicaciones privilegiadas en nuestros tres destinos turísticos. Contamos con tres hoteles en Lima, uno en Cusco y uno en Puno.
+        
+        
+                            </p>
+                            <p>
+                                Viajeros por negocios o por placer encontrarán las comodidades necesarias para una estadía placentera en cualquiera de nuestros 5 hoteles. Contamos con modernas instalaciones, amplias habitaciones y una variada carta gastronómica que fusiona lo local y lo
+        internacional.
+        
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="section flex-start">
+                    <span>© 2021 Fiorella Velazco Llanos</span>
+                    <span>Correo: 
+                    <a href="mailto:velazco.llanos.fiorella@gmail.com">
+                        velazco.llanos.fiorella@gmail.com
+                    </a> </span>
+                    <span>NRC: 1560</span>
+                </div>
+                <div class="section flex-end">
+                    <div>
+                        <a href="https://www.instagram.com/sheratonlima/?hl=es"  target="_blank">
+                            <img src="./assets/imagenes/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=994773492&text=Hola"  target="_blank">
+                            <img src="./assets/imagenes/wasap.png" alt="wasap">
+                        </a>
+                        <a href="https://www.facebook.com/SheratonLima"  target="_blank">
+                            <img src="./assets/imagenes/fb.png" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
